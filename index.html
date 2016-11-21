@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html lang="en-US">
+<head>
+
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+ 
+<title>How fast can you scroll?</title>
+
+
+<script src='https://cdn1.kongregate.com/javascripts/kongregate_api.js'></script>
+</head>
+
+
+<body style="background-color:white"  id ="box">
+
+
+
+
+
+
+
+
+<div class="container">
+<div class="jumbotron" >
+	<span id="how">...ok, but how far<br>
+	can you scroll for<br>
+	<span id="timer_inp">10</span> sec?</span>
+	<img src="" id="spirit" alt=" "><br>
+	<span id="delta">0</span> <span id="stupid">cm</span>
+</div>
+<div class = "jumbotron">
+	<img id="myImg" src="down-arrow.png" onclick="" ontouchmove="" alt= "">
+
+	
+</div>
+</div>
+
+
+<script src="script.js"></script>
+
+<script>
+// Load the API
+var kongregate;
+parent.kongregateAPI.loadAPI(onComplete);
+
+// Callback function
+function onComplete(){
+  // Set the global kongregate API object
+  parent.kongregate = kongregateAPI.getAPI();
+}
+</script>
+
+
+</body>
+
+
+</html>
